@@ -1,5 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+
+  theme: {
+    extend: {
+      fontFamily: {
+        'major-mono': ['Major Mono Display', 'monospace'],
+      },
+    },
+  },
+  
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -15,4 +24,9 @@ module.exports = {
     },
   },
   plugins: [],
+  variants: {
+    extend: {
+      textColor: ['hover'],
+    },
+  },
 }
